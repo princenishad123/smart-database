@@ -1,0 +1,25 @@
+{
+  "name": "smart-database",
+  "version": "1.0.0",
+  "description": "This is smart database using firebase . it is only for those students whose learn forntend . they can use firebase as a backend to save own data .",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/princenishad123/smart-database.git"
+  },
+  "keywords": [
+    "smart-database",
+    "smartdb",
+    "smart",
+    "database"
+  ],
+  "author": "Prince Nishad",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.12.2"
+  }
+}
