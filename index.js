@@ -48,6 +48,28 @@ class smartDatabase {
       return error;
     }
   }
+
+   async updateSpecificDoc(coll,id,childId) {
+    try {
+      const docRef = db.collection(coll).doc(id);
+     const updateRef = await docRef.update({
+      "tasks.LkKzSC8aat.isCompleted": true
+     })
+      
+      if (updateRef){
+        return {
+          message: "update Success",
+          updateRef
+        }
+      }
+      
+      return "something went wrong"
+      
+    } catch (error) {
+      return error;
+    }
+  }
+  
   // deleteDoc fron firestore
   async deleteDoc(collection, id) {
     try {
